@@ -1,0 +1,93 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.3132187415593366,
+        "y": 5.531293229923069
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.076082517871585,
+        "y": 5.531293229923069
+      },
+      "isLocked": false,
+      "linkedName": "MiddleNote"
+    },
+    {
+      "anchor": {
+        "x": 1.4120428956421427,
+        "y": 5.521816553472107
+      },
+      "prevControl": {
+        "x": 1.8921533605976717,
+        "y": 5.521816553472107
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Speaker"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Shoot",
+      "waypointRelativePos": 1.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "BasicShoot"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeOut"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "LifterUp",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "LifterUp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

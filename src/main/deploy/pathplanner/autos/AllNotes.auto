@@ -1,0 +1,55 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7218158264581296,
+      "y": 6.7994709155786826
+    },
+    "rotation": 0.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LeftPositionLeftNote"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "LeftNoteSpeaker"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MiddlePositionMiddleNote"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MiddleNoteSpeaker"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MiddlePositionRightNote"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "RightNoteSpeaker"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
